@@ -1,0 +1,16 @@
+[package]
+name = "ass"
+description = "This is a Rust-based autocomplete and search tool that runs client-side using WebAssembly. It provides functionality for autocomplete and retrieval of content based on search queries."
+authors = ["Tim Raphael"]
+repository = "https://github.com/Tim-Raphael/ass"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = "0.2.84"
+js-sys = "0.3.67"
+rand = "0.8.5"
+getrandom = { version = "0.2", features = ["js"] }
