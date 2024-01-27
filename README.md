@@ -2,6 +2,8 @@
 
 This is a Rust-based autocomplete and search tool that runs client-side using WebAssembly. It provides functionality for autocomplete and retrieval of content based on search queries.
 
+To see the demo in action, you can visit [the demo page](tim-raphael.github.io/ass/demo/).
+
 ## How It Works
 
 Here's a quick rundown of the functionality:
