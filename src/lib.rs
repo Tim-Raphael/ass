@@ -7,8 +7,6 @@ use trie::Trie;
 use data::Data;
 
 use wasm_bindgen::prelude::*;
-use wasm_bindgen::JsValue;
-use js_sys::Array;
 
 #[wasm_bindgen]
 pub struct Ass {
@@ -50,8 +48,8 @@ impl Ass {
         content_list
     }
     
-    pub fn autocomplete(&self, prefix: String) -> Array {
-        Trie::autocomplete(&self.search_tree, prefix).into_iter().map(JsValue::from).collect()
+    pub fn autocomplete(&self, prefix: String) -> Vec<String> {
+        Trie::autocomplete(&self.search_tree, prefix)
     }
 
     pub fn get_content(&self, item: String) -> String {
